@@ -1,0 +1,394 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="en">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>Hugo Health - Proactive care for better living</title>\
+    <style>\
+        * \{\
+            margin: 0;\
+            padding: 0;\
+            box-sizing: border-box;\
+        \}\
+\
+        body \{\
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;\
+            line-height: 1.6;\
+            color: #333;\
+        \}\
+\
+        /* Header */\
+        .header \{\
+            background: white;\
+            padding: 1rem 2rem;\
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);\
+            position: fixed;\
+            width: 100%;\
+            top: 0;\
+            z-index: 1000;\
+        \}\
+\
+        .nav \{\
+            display: flex;\
+            justify-content: space-between;\
+            align-items: center;\
+            max-width: 1200px;\
+            margin: 0 auto;\
+        \}\
+\
+        .logo \{\
+            display: flex;\
+            align-items: center;\
+            font-size: 1.5rem;\
+            font-weight: 700;\
+            color: #333;\
+        \}\
+\
+        .owl-icon \{\
+            width: 40px;\
+            height: 40px;\
+            margin-right: 10px;\
+            background: linear-gradient(135deg, #70d6ff, #ff70a6);\
+            border-radius: 50%;\
+            display: flex;\
+            align-items: center;\
+            justify-content: center;\
+            color: white;\
+            font-weight: bold;\
+        \}\
+\
+        .nav-links \{\
+            display: flex;\
+            list-style: none;\
+            gap: 2rem;\
+        \}\
+\
+        .nav-links a \{\
+            text-decoration: none;\
+            color: #333;\
+            font-weight: 500;\
+            transition: color 0.3s ease;\
+        \}\
+\
+        .nav-links a:hover \{\
+            color: #70d6ff;\
+        \}\
+\
+        /* Section 1 - Hero */\
+        .hero \{\
+            background: linear-gradient(135deg, #f8fdff 0%, #fff5f8 100%);\
+            min-height: 100vh;\
+            display: flex;\
+            align-items: center;\
+            justify-content: center;\
+            text-align: center;\
+            padding: 120px 2rem 2rem;\
+        \}\
+\
+        .hero-content \{\
+            max-width: 600px;\
+        \}\
+\
+        .hero h1 \{\
+            font-size: 3.5rem;\
+            font-weight: 300;\
+            color: #333;\
+            margin-bottom: 1.5rem;\
+            letter-spacing: -1px;\
+        \}\
+\
+        .hero p \{\
+            font-size: 1.5rem;\
+            color: #666;\
+            margin-bottom: 3rem;\
+            font-weight: 300;\
+        \}\
+\
+        .cta-button \{\
+            background: linear-gradient(135deg, #70d6ff, #ff70a6);\
+            color: white;\
+            padding: 1rem 3rem;\
+            font-size: 1.1rem;\
+            font-weight: 600;\
+            border: none;\
+            border-radius: 50px;\
+            cursor: pointer;\
+            text-decoration: none;\
+            display: inline-block;\
+            transition: transform 0.3s ease, box-shadow 0.3s ease;\
+        \}\
+\
+        .cta-button:hover \{\
+            transform: translateY(-2px);\
+            box-shadow: 0 10px 25px rgba(112, 214, 255, 0.3);\
+        \}\
+\
+        /* Section 2 - Services */\
+        .services \{\
+            padding: 100px 2rem;\
+            background: white;\
+        \}\
+\
+        .services-container \{\
+            max-width: 1200px;\
+            margin: 0 auto;\
+        \}\
+\
+        .services-grid \{\
+            display: grid;\
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));\
+            gap: 3rem;\
+            margin-top: 3rem;\
+        \}\
+\
+        .service-box \{\
+            background: #f8fdff;\
+            padding: 2.5rem 2rem;\
+            border-radius: 20px;\
+            text-align: center;\
+            border: 1px solid #e6f7ff;\
+            transition: transform 0.3s ease, box-shadow 0.3s ease;\
+        \}\
+\
+        .service-box:hover \{\
+            transform: translateY(-5px);\
+            box-shadow: 0 15px 35px rgba(112, 214, 255, 0.1);\
+        \}\
+\
+        .service-box h3 \{\
+            font-size: 1.3rem;\
+            font-weight: 600;\
+            color: #333;\
+            margin-bottom: 1rem;\
+        \}\
+\
+        .service-box p \{\
+            color: #666;\
+            line-height: 1.6;\
+        \}\
+\
+        /* Section 3 - Waitlist Form */\
+        .waitlist \{\
+            background: linear-gradient(135deg, #f0f9ff 0%, #fef7f0 100%);\
+            padding: 100px 2rem;\
+        \}\
+\
+        .waitlist-container \{\
+            max-width: 600px;\
+            margin: 0 auto;\
+            text-align: center;\
+        \}\
+\
+        .waitlist h2 \{\
+            font-size: 2.5rem;\
+            font-weight: 300;\
+            color: #333;\
+            margin-bottom: 1.5rem;\
+        \}\
+\
+        .waitlist-form \{\
+            background: white;\
+            padding: 3rem 2.5rem;\
+            border-radius: 20px;\
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);\
+            margin-top: 2rem;\
+        \}\
+\
+        .form-group \{\
+            margin-bottom: 1.5rem;\
+            text-align: left;\
+        \}\
+\
+        .form-group label \{\
+            display: block;\
+            font-weight: 500;\
+            color: #333;\
+            margin-bottom: 0.5rem;\
+        \}\
+\
+        .form-group input \{\
+            width: 100%;\
+            padding: 1rem;\
+            border: 2px solid #e6f7ff;\
+            border-radius: 10px;\
+            font-size: 1rem;\
+            transition: border-color 0.3s ease;\
+        \}\
+\
+        .form-group input:focus \{\
+            outline: none;\
+            border-color: #70d6ff;\
+        \}\
+\
+        .submit-button \{\
+            background: linear-gradient(135deg, #70d6ff, #ff70a6);\
+            color: white;\
+            padding: 1rem 3rem;\
+            font-size: 1.1rem;\
+            font-weight: 600;\
+            border: none;\
+            border-radius: 50px;\
+            cursor: pointer;\
+            width: 100%;\
+            margin-top: 1rem;\
+            transition: transform 0.3s ease, box-shadow 0.3s ease;\
+        \}\
+\
+        .submit-button:hover \{\
+            transform: translateY(-2px);\
+            box-shadow: 0 10px 25px rgba(112, 214, 255, 0.3);\
+        \}\
+\
+        /* Mobile Responsive */\
+        @media (max-width: 768px) \{\
+            .nav-links \{\
+                display: none;\
+            \}\
+\
+            .hero h1 \{\
+                font-size: 2.5rem;\
+            \}\
+\
+            .hero p \{\
+                font-size: 1.2rem;\
+            \}\
+\
+            .services-grid \{\
+                grid-template-columns: 1fr;\
+                gap: 2rem;\
+            \}\
+\
+            .header \{\
+                padding: 1rem;\
+            \}\
+\
+            .hero \{\
+                padding: 100px 1rem 2rem;\
+            \}\
+\
+            .services \{\
+                padding: 80px 1rem;\
+            \}\
+\
+            .waitlist \{\
+                padding: 80px 1rem;\
+            \}\
+\
+            .waitlist-form \{\
+                padding: 2rem 1.5rem;\
+            \}\
+        \}\
+    </style>\
+</head>\
+<body>\
+    <!-- Header -->\
+    <header class="header">\
+        <nav class="nav">\
+            <div class="logo">\
+                <div class="owl-icon">\uc0\u55358 \u56713 </div>\
+                HUGO HEALTH\
+            </div>\
+            <ul class="nav-links">\
+                <li><a href="#services">Our Services</a></li>\
+                <li><a href="#about">About Us</a></li>\
+                <li><a href="#contact">Contact</a></li>\
+            </ul>\
+        </nav>\
+    </header>\
+\
+    <!-- Section 1 - Hero -->\
+    <section class="hero">\
+        <div class="hero-content">\
+            <h1>HUGO HEALTH</h1>\
+            <p>Proactive care for better living</p>\
+            <a href="#waitlist" class="cta-button">Join waitlist</a>\
+        </div>\
+    </section>\
+\
+    <!-- Section 2 - Services -->\
+    <section class="services" id="services">\
+        <div class="services-container">\
+            <div class="services-grid">\
+                <div class="service-box">\
+                    <h3>Tailored care strategies</h3>\
+                    <p>Personalized plans help you stay ahead of health risks and support long-term wellbeing.</p>\
+                </div>\
+                <div class="service-box">\
+                    <h3>Routine health screenings</h3>\
+                    <p>Regular checkups enable early detection and proactive management of health concerns.</p>\
+                </div>\
+                <div class="service-box">\
+                    <h3>Ongoing lifestyle guidance</h3>\
+                    <p>Expert advice on nutrition, activity, and stress for balanced daily health.</p>\
+                </div>\
+                <div class="service-box">\
+                    <h3>Coordinated care experience</h3>\
+                    <p>Your providers work together for seamless, connected support at every step.</p>\
+                </div>\
+            </div>\
+        </div>\
+    </section>\
+\
+    <!-- Section 3 - Waitlist Form -->\
+    <section class="waitlist" id="waitlist">\
+        <div class="waitlist-container">\
+            <h2>Join our waitlist</h2>\
+            <form class="waitlist-form" action="#" method="POST">\
+                <div class="form-group">\
+                    <label for="name">Name</label>\
+                    <input type="text" id="name" name="name" required>\
+                </div>\
+                <div class="form-group">\
+                    <label for="email">Email address</label>\
+                    <input type="email" id="email" name="email" required>\
+                </div>\
+                <div class="form-group">\
+                    <label for="mobile">Mobile</label>\
+                    <input type="tel" id="mobile" name="mobile" required>\
+                </div>\
+                <button type="submit" class="submit-button">Join waitlist</button>\
+            </form>\
+        </div>\
+    </section>\
+\
+    <script>\
+        // Smooth scrolling for navigation links\
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => \{\
+            anchor.addEventListener('click', function (e) \{\
+                e.preventDefault();\
+                document.querySelector(this.getAttribute('href')).scrollIntoView(\{\
+                    behavior: 'smooth'\
+                \});\
+            \});\
+        \});\
+\
+        // Form submission handling\
+        document.querySelector('.waitlist-form').addEventListener('submit', function(e) \{\
+            e.preventDefault();\
+            \
+            // Get form data\
+            const formData = new FormData(this);\
+            const name = formData.get('name');\
+            const email = formData.get('email');\
+            const mobile = formData.get('mobile');\
+            \
+            // Here you would typically send the data to your server\
+            console.log('Waitlist signup:', \{ name, email, mobile \});\
+            \
+            // Show success message (replace with your preferred method)\
+            alert('Thank you for joining our waitlist! We\\'ll be in touch soon.');\
+            \
+            // Reset form\
+            this.reset();\
+        \});\
+    </script>\
+</body>\
+</html>\
+}
