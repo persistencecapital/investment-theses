@@ -1,492 +1,442 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arweave & AO - Thesis Update</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <meta name="description" content="Comprehensive investment analysis of Beacon (BCN) - Cross-Chain DeFi Infrastructure solving the custody-convenience paradox">
+    <meta name="author" content="Persistence Capital Management Pty Ltd">
+    <meta property="og:title" content="Beacon (BCN) Investment Report">
+    <meta property="og:description" content="Cross-Chain DeFi Infrastructure: Solving the Custody-Convenience Paradox">
+    <meta property="og:type" content="website">
+    <title>Beacon (BCN) Investment Report - Persistence Capital</title>
     <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
       body {
         max-width: 880px;
         margin: 0 auto;
-        padding: 32px 80px;
+        padding: 32px 20px;
         position: relative;
         box-sizing: border-box;
-        background-color: #ffffff;
         font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #ffffff;
+        background-color: #ffffff;
+        text-align: justify;
       }
 
       .logo-container {
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
+        background-color: #ffffff;
+        padding: 20px 0;
       }
 
-      .logo-container img {
+      .logo {
         max-height: 120px;
         width: auto;
       }
 
-      .document-title {
+      .header-section {
         background-color: #182320;
-        padding: 20px;
+        padding: 30px;
         text-align: center;
-        margin: 30px 0;
+        margin-bottom: 30px;
+        border-radius: 5px;
       }
 
-      .document-title h1 {
+      h1 {
+        color: #f6ee9c;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        font-family: system-ui, -apple-system, sans-serif;
+      }
+
+      .subtitle {
+        font-size: 18px;
+        color: #cbcaca;
+        margin-bottom: 20px;
+        font-style: italic;
+      }
+
+      .header-info {
+        font-size: 14px;
         color: #ffffff;
-        margin: 0;
       }
 
-      .document-subtitle {
-        background-color: #182320;
-        padding: 10px 20px;
-        text-align: center;
-        margin: 0 0 30px 0;
-      }
-
-      .document-subtitle h2 {
-        color: #ffffff;
-        margin: 0;
-      }
-
-      .section {
+      .content-section {
         background-color: #182320;
         padding: 25px;
         margin: 20px 0;
+        border-radius: 5px;
       }
 
-      .section h2 {
+      h2 {
         color: #f6ee9c;
+        font-size: 20px;
+        font-weight: 700;
         margin-top: 0;
-        font-size: 1.5em;
-        font-weight: bold;
+        margin-bottom: 20px;
+        font-family: system-ui, -apple-system, sans-serif;
       }
 
-      .section h3 {
+      h3 {
         color: #cbcaca;
-        font-size: 1.2em;
-        margin-top: 20px;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        font-family: system-ui, -apple-system, sans-serif;
       }
 
-      .section p,
-      .section li {
-        color: #ffffff;
-        line-height: 1.6;
-      }
-
-      .metrics-box {
-        background-color: #182320;
-        border: 2px solid #f6ee9c;
+      .highlight-box {
+        background-color: #243429;
+        border-left: 4px solid #f6ee9c;
         padding: 20px;
         margin: 20px 0;
+        border-radius: 3px;
       }
 
-      .metrics-box h3 {
-        color: #f6ee9c;
-        margin-top: 0;
+      .token-info {
+        background-color: #243429;
+        padding: 20px;
+        border: 2px solid #f6ee9c;
+        margin: 20px 0;
+        border-radius: 5px;
+        font-family: system-ui, -apple-system, sans-serif;
       }
 
-      .metrics-box ul {
-        color: #ffffff;
-        margin: 10px 0;
+      .investment-terms {
+        background-color: #243429;
+        border: 2px solid #cbcaca;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
       }
 
       table {
-        background-color: #182320;
         width: 100%;
         border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 14px;
+        background-color: #182320;
+      }
+
+      th {
+        background-color: #182320;
+        color: #f6ee9c;
+        padding: 15px 12px;
+        text-align: left;
+        vertical-align: top;
+        font-weight: 700;
+        font-family: system-ui, -apple-system, sans-serif;
+        border: 1px solid #243429;
+      }
+
+      td {
+        background-color: #243429;
+        color: #ffffff;
+        padding: 12px;
+        text-align: left;
+        vertical-align: top;
+        border: 1px solid #2d4035;
+      }
+
+      tr:nth-child(even) td {
+        background-color: #1e2923;
+      }
+
+      ul,
+      ol {
+        margin: 15px 0;
+        padding-left: 25px;
+        color: #ffffff;
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      p {
+        color: #ffffff;
         margin: 15px 0;
       }
 
-      table th {
+      .disclaimer {
         background-color: #182320;
+        padding: 25px;
+        margin-top: 30px;
+        font-size: 12px;
+        line-height: 1.4;
+        border-radius: 5px;
+      }
+
+      .disclaimer h3 {
         color: #f6ee9c;
-        padding: 12px;
-        text-align: left;
-        border: 1px solid #cbcaca;
+        margin-top: 0;
+        margin-bottom: 15px;
       }
 
-      table td {
-        background-color: #182320;
+      .disclaimer p {
         color: #ffffff;
-        padding: 12px;
-        border: 1px solid #cbcaca;
+        margin-bottom: 12px;
       }
 
-      .chart-container {
-        text-align: center;
-        margin: 25px 0;
-      }
-
-      .chart-container img {
-        max-width: 100%;
-        height: auto;
-      }
-
-      .chart-caption {
-        color: #cbcaca;
-        font-style: italic;
-        margin-top: 10px;
-        font-size: 0.9em;
-      }
-
-      .insight-box {
+      .footer-section {
         background-color: #182320;
-        border-left: 5px solid #f6ee9c;
         padding: 20px;
-        margin: 20px 0;
-        font-style: italic;
-      }
-
-      .insight-box p {
+        text-align: center;
         color: #ffffff;
-        margin: 0;
-      }
-
-      .checkmark {
-        color: #f6ee9c;
-        font-weight: bold;
-      }
-
-      .footer {
-        background-color: #182320;
-        padding: 15px;
-        margin-top: 40px;
-        font-size: 0.8em;
-        color: #cbcaca;
-        text-align: justify;
-      }
-
-      ul {
-        color: #ffffff;
+        font-size: 12px;
+        margin-top: 20px;
+        border-radius: 5px;
       }
 
       strong {
-        color: #f6ee9c;
+        font-weight: 700;
+      }
+
+      /* Responsive Design */
+      @media screen and (max-width: 768px) {
+        body {
+          padding: 20px 15px;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+
+        h2 {
+          font-size: 18px;
+        }
+
+        h3 {
+          font-size: 14px;
+        }
+
+        .subtitle {
+          font-size: 16px;
+        }
+
+        table {
+          font-size: 12px;
+        }
+
+        th, td {
+          padding: 8px 4px;
+        }
+
+        .content-section {
+          padding: 20px 15px;
+        }
+
+        .logo {
+          max-height: 80px !important;
+        }
+      }
+
+      @media screen and (min-width: 769px) and (max-width: 1024px) {
+        body {
+          padding: 30px 40px;
+        }
+      }
+
+      /* Print Styles */
+      @media print {
+        body {
+          background-color: white;
+          padding: 0;
+        }
+
+        .content-section {
+          page-break-inside: avoid;
+        }
+
+        .disclaimer {
+          page-break-before: always;
+        }
+      }
+
+      /* Smooth Scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Selection Color */
+      ::selection {
+        background-color: #f6ee9c;
+        color: #182320;
       }
     </style>
   </head>
   <body>
     <div class="logo-container">
-      <img src="https://gensparkstorageprodwest.blob.core.windows.net/web-drive/075c298d-51be-4b37-838d-e2ff0e14dc2b/46c3e12f-bb42-4340-a468-9416d970aad7?se=2025-10-24T03%3A10%3A36Z&sp=r&sv=2025-05-05&sr=b&rscd=attachment%3B%20filename%3D%22company_logo.jpg%22&sig=NANwlNZbe9z7GzFkygHKc9x9vBHdYSVkLB38w%2B1LMnA%3D" alt="Persistence Capital Logo">
+      <div class="text-logo">
+        <div style="font-size: 32px; font-weight: 700; letter-spacing: 2px; color: #182320; font-family: system-ui, -apple-system, sans-serif;">PERSISTENCE</div>
+        <div style="font-size: 16px; font-weight: 400; letter-spacing: 8px; color: #182320; font-family: system-ui, -apple-system, sans-serif; margin-top: 5px;">CAPITAL</div>
+      </div>
     </div>
 
-    <div class="document-title">
-      <h1>Arweave & AO</h1>
-    </div>
-    <div class="document-subtitle">
-      <h2>Thesis Update | October 2025</h2>
+    <div class="header-section">
+      <h1>BEACON (BCN) INVESTMENT REPORT</h1>
+      <div class="subtitle">Cross-Chain DeFi Infrastructure: Solving the Custody-Convenience Paradox</div>
+      <div class="header-info">
+        <strong>Prepared by:</strong> Kyall Walker, General Partner, Persistence Capital Management Pty Ltd<br>
+        <strong>Date:</strong> October 2025
+      </div>
     </div>
 
-    <div class="section">
+    <div class="content-section">
       <h2>1. EXECUTIVE SUMMARY</h2>
+
       <p>
-        Arweave has reached a critical inflection point in Q4 2025, with endowment lockup mechanisms now exceeding new
-        token emissions. This marks the beginning of deflationary pressure on AR supply. Combined with accelerating storage
-        demand (53% growth in 10 months) and the catalytic launch of AO network, the protocol demonstrates fundamental
-        strength that appears disconnected from current valuations.
+        Beacon represents the end-game for unified, decentralised finance. It provides a true solution
+        for the trade-off between the experience of centralised exchanges, the value of decentralised finance, and the
+        security of institutional custodial providers. By leveraging breakthrough cross-chain smart contract technology,
+        Beacon enables users to interact with any asset on any blockchain through a single unified interface, without
+        sacrificing control of their funds to centralised custodians or vulnerable bridge protocols.
       </p>
 
-      <div class="metrics-box">
-        <h3>Key Metrics</h3>
-        <ul>
-          <li><strong>Total Supply:</strong> 65.65M / 66M AR (99.5% of max)</li>
-          <li><strong>Storage:</strong> 335.88 TiB (Oct 2025), +53% in 10 months</li>
-          <li><strong>2025 Crossover:</strong> Endowment lockup (119K AR/yr) > New emissions (135K AR/yr)</li>
-          <li><strong>Endowment Growth:</strong> +50% YoY (2023-2024), accelerating</li>
-          <li><strong>Use Cases:</strong> 6 major categories, most diversified in history</li>
-        </ul>
+      <div class="token-info">
+        <strong>Token:</strong> BCN | <strong>Total Supply:</strong> 1 Billion | <strong>Launch:</strong> Q4 2025 |
+        <strong>Initial Price:</strong> $0.01
       </div>
 
-      <h3>Investment Thesis</h3>
+      <h3>Key Investment Highlights:</h3>
       <ul>
-        <li><strong>Supply Dynamics Inflection:</strong> First year where token lockup exceeds emissions</li>
         <li>
-          <strong>Demand Acceleration:</strong> Storage growth re-accelerating after 2023 slowdown (3x YoY Feb 2025)
+          <strong>Market Opportunity:</strong> $42+ billion total addressable market currently captured by centralised
+          exchanges and bridges
         </li>
-        <li><strong>AO Catalyst:</strong> Computing layer driving new use cases without token dilution (growth in agentic data stored permanently).</li>
+        <li>
+          <strong>Technical Breakthrough:</strong> First non-custodial platform with zero custody points across entire
+          technology stack
+        </li>
+        <li>
+          <strong>Proven Team:</strong> Experienced founders with track record of scaling web3 products. Previously built Zcash lite client with over 500k users.</li>
+        <li><strong>Liquid Investment:</strong> Token Generation Event (TGE) ~October 2025 with immediate market access.</li>
+        <li>
+          <strong>Deflationary Tokenomics:</strong> Token economics directly tied to platform usage with continuous burn
+          mechanisms
+        </li>
       </ul>
+
+      <div class="investment-terms">
+        <h3>TGE Terms:</h3>
+        <p style="font-size: 18px; margin-top: 10px;">10% supply at $10M FDV ($0.01 per BCN) - No lockup</p>
+      </div>
     </div>
 
-    <div class="section">
-      <h2>2. PROTOCOL FUNDAMENTALS & TOKENOMICS</h2>
+    <div class="content-section">
+      <h2>2. INVESTMENT THESIS</h2>
+
       <p>
-        Arweave is a decentralised permanent storage network with unique tokenomics designed for long-term
-        sustainability. AR token serves as both storage payment medium and mining incentive.
+        The decentralised finance sector faces a fundamental paradox: users must choose between security and
+        convenience. Current solutions force an impossible decision between centralised exchanges (convenient but risky
+        custody) and self-custodial wallets (secure but complex cross-chain operations). This false choice has created a
+        $42 billion opportunity for a platform that can deliver both security and convenience simultaneously.
       </p>
 
+      <p>
+        Beacon solves this paradox through revolutionary zero-custody cross-chain architecture. Unlike competitors who
+        introduce custody points during cross-chain operations, Beacon maintains complete user control throughout the
+        entire transaction lifecycle. Users interact with a single smart contract capable of executing actions across
+        all supported blockchains, regardless of virtual machine or programming language differences.
+      </p>
+
+      <p>
+        Market timing is optimal following high-profile failures that have cost users billions. The FTX collapse ($9
+        billion in customer funds) and systematic bridge attacks ($5+ billion stolen 2021-2025, primarily by North
+        Korean hackers) have created urgent demand for trustless solutions. Beacon's zero-custody architecture
+        eliminates both custodial and bridge risks while delivering superior user experience.
+      </p>
+
+      <p>
+        Token value accrual is directly tied to platform adoption through deflationary mechanisms. Every transaction
+        burns BCN tokens, 75% of DeFi gas fees are burned, and 30% of pool yields fund additional buybacks and burns. As
+        usage scales, these mechanisms create sustained deflationary pressure while locked staking requirements further
+        reduce circulating supply.
+      </p>
+    </div>
+
+    <div class="content-section">
+      <h2>3. PROTOCOL FUNDAMENTALS &amp; TOKENOMICS</h2>
+
+      <h3>3.1 Token Overview</h3>
+      <ul>
+        <li><strong>Token Symbol:</strong> BCN</li>
+        <li><strong>Total Supply:</strong> 1 billion tokens</li>
+        <li><strong>Launch Date:</strong> October 2025</li>
+        <li><strong>Launch Networks:</strong> Ethereum and Base</li>
+        <li><strong>Initial Price:</strong> $0.01 per BCN</li>
+      </ul>
+
+      <h3>3.2 Token Utility</h3>
+      <p>
+        BCN is required to access every core Beacon feature, ensuring direct correlation between platform growth and
+        token demand:
+      </p>
+      <ul>
+        <li>
+          <strong>Transaction Fees:</strong> BCN required for all platform interactions and cross-chain operations
+        </li>
+        <li><strong>Liquidity Pool Creation:</strong> BCN staking required for pool deployment and management</li>
+        <li><strong>Node Operation:</strong> Network validators must stake BCN to participate in consensus</li>
+        <li>
+          <strong>Autonomous Agent Deployment:</strong> AI-powered yield optimization requires BCN for computation
+        </li>
+        <li><strong>Governance Participation:</strong> Protocol development controlled by BCN holders</li>
+      </ul>
+
+      <h3>3.3 Deflationary Mechanisms</h3>
       <table>
         <thead>
           <tr>
-            <th>Metric</th>
-            <th>Value</th>
-            <th>Notes</th>
+            <th>Mechanism</th>
+            <th>Impact</th>
+            <th>Description</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Genesis Supply</td>
-            <td>55M AR</td>
-            <td>June 8, 2018</td>
+            <td>Transaction Burning</td>
+            <td>High</td>
+            <td>Every Beacon transaction burns BCN, creating direct scarcity from usage</td>
           </tr>
           <tr>
-            <td>Maximum Supply</td>
-            <td>66M AR</td>
-            <td>Hard cap</td>
+            <td>Gas Fee Burning</td>
+            <td>Very High</td>
+            <td>75% of all DeFi gas fees converted to BCN and burned permanently</td>
           </tr>
           <tr>
-            <td>Current Supply</td>
-            <td>65.65M AR</td>
-            <td>99.5% of max</td>
+            <td>Yield Buybacks</td>
+            <td>Medium</td>
+            <td>30% of pool yield used for BCN market buybacks and subsequent burning</td>
           </tr>
           <tr>
-            <td>Current Endowment</td>
-            <td>~150K AR</td>
-            <td>Jan 2025 estimate</td>
-          </tr>
-          <tr>
-            <td>Emission Rate</td>
-            <td>~2% annually</td>
-            <td>Exponential decay</td>
+            <td>Staking Requirements</td>
+            <td>Medium</td>
+            <td>Locked BCN for nodes and pools reduces circulating supply</td>
           </tr>
         </tbody>
       </table>
 
-      <div class="insight-box">
-        <p>
-          <strong>Endowment Mechanism (Key Innovation):</strong> 80% of all storage fees are locked into the endowment,
-          funding perpetual storage. Only 20% goes to miners immediately. This creates a deflationary sink that grows
-          with network usage.
-        </p>
-      </div>
-
-      <h3>Historical Endowment Growth</h3>
+      <h3>3.4 Token Distribution</h3>
       <ul>
-        <li>Jan 2023: 44,000 AR</li>
-        <li>Jan 2024: 66,000 AR (+50% YoY)</li>
-        <li>Jul 2024: 85,000 AR (+29% in 6 months)</li>
-        <li>Jan 2025: Weekly lockup of 2,292 AR (~119,000 AR annually)</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>3. THE 2025 CROSSOVER.</h2>
-      <p>For the first time since genesis (2019), the rate of AR entering the endowment
-        (locked forever) exceeds the rate of new AR being mined.
-      </p>
-
-      <h3>2025 Annual Flows</h3>
-      <ul>
-        <li>New Mining Rewards: ~135,000 AR/year (declining)</li>
-        <li>Endowment Lockup: ~119,000 AR/year (growing)</li>
-        <li>Net New Supply: ~16,000 AR/year</li>
+        <li><strong>Private Sale:</strong> 10% at $10M FDV (100M tokens)</li>
+        <li><strong>User Rewards Program:</strong> 10% for acquisition incentives (100M tokens)</li>
+        <li><strong>Team &amp; Development:</strong> 20% with vesting schedule (200M tokens)</li>
+        <li><strong>Liquidity &amp; Market Making:</strong> 15% for exchange listings (150M tokens)</li>
+        <li><strong>Treasury &amp; Operations:</strong> 25% for ongoing development (250M tokens)</li>
+        <li><strong>Public Sale &amp; Community:</strong> 20% for broader distribution (200M tokens)</li>
       </ul>
 
-      <p>
-        <strong>Projection (2026-2030):</strong> By 2027, endowment lockup is projected to exceed 200,000 AR annually
-        while new emissions fall below 100,000 AR. This will create a net negative flow of ~100,000 AR/year from circulating
-        supply.
-      </p>
-
-      <div class="chart-container">
-        <img src="https://gensparkstorageprodwest.blob.core.windows.net/web-drive/075c298d-51be-4b37-838d-e2ff0e14dc2b/d5d1f3a9-1aa9-4cb8-babb-9744bb068087?se=2025-10-24T03%3A10%3A55Z&sp=r&sv=2025-05-05&sr=b&rscd=attachment%3B%20filename%3D%22ar_supply_endowment_2019_2035.png%22&sig=mKMiq6dCgrCqwA5%2BpybmBKBKxmtxLUizteqPZLEYb0I%3D" alt="AR Token Supply Dynamics">
-        <div class="chart-caption">AR Token Supply Dynamics: New Emissions vs Endowment Lockup (2019-2035)</div>
-      </div>
-
-      <div class="insight-box">
-        <p>
-          Unlike buyback-and-burn mechanisms, Arweave's endowment is protocol-enforced and grows automatically with
-          usage. There is no governance risk or execution dependency. Every storage transaction permanently removes 80%
-          of fees from circulation.
-        </p>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>4. STORAGE ECONOMICS: DEMAND ACCELERATION</h2>
-
-      <h3>Historical Storage Growth</h3>
+      <h3>3.5 Revenue Streams</h3>
+      <p>Beacon captures value across multiple revenue streams, all flowing to BCN token holders:</p>
       <ul>
-        <li>2022: 74.5 TiB total stored</li>
-        <li>2023: +32.96 TiB added (44% decline from 2022 - bear market impact)</li>
-        <li>Oct 2024: ~220 TiB (61 partitions × 3.6TB)</li>
-        <li>Oct 2025: 335.88 TiB (+53% in 10 months)</li>
-      </ul>
-
-      <h3>Monthly Highlights</h3>
-      <ul>
-        <li>Q3 2025: Sustained acceleration in uploads</li>
-        <li>Current run rate: ~120-150 TiB annually (if maintained)</li>
-      </ul>
-
-      <h3>Cost Competitiveness</h3>
-      <p>Arweave offers permanent storage at one-time payment vs. recurring subscription models:</p>
-      <ul>
-        <li>AWS S3: $0.023/GB/month = $276/GB over 10 years</li>
-        <li>Arweave: ~$2-5/GB one-time (200-year guarantee)</li>
-        <li>Value proposition improves dramatically over multi-year periods</li>
-      </ul>
-
-      <h3>Demand Drivers</h3>
-      <ol>
-        <li>NFT metadata/assets (40% of storage)</li>
-        <li>L2 rollup data availability (25%)</li>
-        <li>Social media content via AO (15%)</li>
-        <li>Archive preservation (10%)</li>
-        <li>AI training datasets (5%)</li>
-        <li>DApp data (5%)</li>
-      </ol>
-    </div>
-
-    <div class="section">
-      <h2>5. AO NETWORK: THE MULTIPLIER CATALYST</h2>
-
-      <h3>What is AO?</h3>
-      <p>
-        Launched February 2024, AO is Arweave's hyperparallel computing layer that enables smart contracts, social
-        applications, and decentralised computation while using Arweave for permanent data storage.
-      </p>
-
-      <h3>The Flywheel Effect</h3>
-      <p>
-        <strong>AO Activity → Storage Demand → AR Fees → Endowment Lockup → Supply Reduction → Scarcity Premium</strong>
-      </p>
-
-      <h3>Every AO transaction:</h3>
-      <ul>
-        <li>Stores computation results on Arweave (permanent)</li>
-        <li>Pays storage fees in AR (80% to endowment)</li>
-        <li>Creates new use cases without inflating token supply</li>
-      </ul>
-
-      <h3>Post-AO Launch Impact (Feb 2024 - Oct 2025)</h3>
-      <ul>
-        <li>Social Media usage: 8.7% → 15.0% of total storage (+72%)</li>
-        <li>DApp data: 3.3% → 5.0% of total storage (+52%)</li>
-        <li>AI Training: 3.3% → 5.0% (+52%)</li>
-        <li>Total storage acceleration: 220 TiB → 336 TiB (+53% in 10 months)</li>
-      </ul>
-
-      <div class="insight-box">
-        <p>
-          <strong>Strategic Positioning:</strong> AO positions Arweave as both storage layer AND computing layer,
-          competing with Ethereum L2s, Solana, and specialised DA layers. It does this while maintaining superior economics through
-          permanent storage model, opposed to others that issue high token emissions to 'pay' users (and farmers) to use the product. The model proves product-market-fit where <i>real</i> customers are willing to pay to use the product.</p>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>6. USE CASE DIVERSIFICATION: REDUCING SINGLE-POINT RISK</h2>
-
-      <div class="chart-container">
-        <img src="https://gensparkstorageprodwest.blob.core.windows.net/web-drive/075c298d-51be-4b37-838d-e2ff0e14dc2b/7461e308-815f-419c-8695-e898f1a41a4c?se=2025-10-24T03%3A10%3A45Z&sp=r&sv=2025-05-05&sr=b&rscd=attachment%3B%20filename%3D%22chart6_use_case_share.png%22&sig=O/xqV41/QCB/nzwU6lD6y3oTGfAACmfEi1ktISIND1I%3D" alt="Use Case Composition">
-        <div class="chart-caption">Arweave Storage Use Case Composition (2018-2025)</div>
-      </div>
-
-      <h3>2018-2020: Archive-First Era</h3>
-      <ul>
-        <li>Archives dominated (45% of storage)</li>
-        <li>Limited use case diversity</li>
-        <li>Total addressable market unclear</li>
-      </ul>
-
-      <h3>2021-2022: NFT Boom</h3>
-      <ul>
-        <li>NFTs peaked at 65% of storage</li>
-        <li>Solana integration: 60-70% of Solana NFTs use Arweave</li>
-        <li>Single-use-case concentration risk</li>
-        <li>Proved product-market fit at scale</li>
-      </ul>
-
-      <h3>2024-2025: AO-Driven Balance (Current)</h3>
-      <ul>
-        <li>Most diversified period in history</li>
-        <li>Six distinct use cases each contributing meaningfully</li>
-        <li>No single category exceeds 40%</li>
-        <li>Demonstrates platform versatility</li>
-      </ul>
-
-      <table>
-        <thead>
-          <tr>
-            <th>Use Case</th>
-            <th>Storage</th>
-            <th>Share</th>
-            <th>Growth Trajectory</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>NFTs</td>
-            <td>134.2 TiB</td>
-            <td>40%</td>
-            <td>Stable, large base</td>
-          </tr>
-          <tr>
-            <td>L2 Data</td>
-            <td>83.9 TiB</td>
-            <td>25%</td>
-            <td>Rapidly growing</td>
-          </tr>
-          <tr>
-            <td>Social Media</td>
-            <td>50.3 TiB</td>
-            <td>15%</td>
-            <td>AO-accelerated</td>
-          </tr>
-          <tr>
-            <td>Archives</td>
-            <td>33.6 TiB</td>
-            <td>10%</td>
-            <td>Foundational, steady</td>
-          </tr>
-          <tr>
-            <td>AI Training</td>
-            <td>16.8 TiB</td>
-            <td>5%</td>
-            <td>Emerging category</td>
-          </tr>
-          <tr>
-            <td>DApps</td>
-            <td>16.8 TiB</td>
-            <td>5%</td>
-            <td>Growing via AO</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="insight-box">
-        <p>
-          <strong>Risk Mitigation:</strong> October 2025 represents the healthiest use case distribution in Arweave's
-          history. Even complete collapse of any single category would not threaten protocol viability.
-        </p>
-      </div>
-    </div>
-
-    <div class="section">
-      <h2>7. VALUATION ANALYSIS: THE UNDERVALUATION THESIS</h2>
-
-      <div class="insight-box">
-        <p>
-          Arweave offers unique combination of supply-side deflation + demand-side acceleration that is rare in crypto
-          protocols. Most tokens have inflationary tokenomics; those with deflationary mechanics often lack
-          product-market fit. Arweave has both.
-        </p>
-      </div>
-
-      <h3>Supply-Side Value Drivers</h3>
-      <ul>
-        <li>2025 crossover achieved (lockup > emissions)</li>
-        <li> Endowment growing 50%+ annually</li>
-        <li>99.5% of max supply already in circulation</li>
-        <li>No governance risk to deflationary mechanism</li>
-        <li>Automatic with every transaction (no execution dependency)</li>
-      </ul>
-
-      <h3>Demand-Side Value Drivers</h3>
-      <ul>
-        <li>Storage demand accelerating (53% in 10 months)</li>
-        <li>Six diversified use cases (de-risked)</li>
-        <li>AO expanding TAM without dilution</li>
-        <li>Cost-competitive vs alternatives</li><span class="cursor">█</span>
+        <li><strong>Platform Transaction Fees:</strong> Direct revenue from every<span class="cursor">█</span>
