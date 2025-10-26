@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Comprehensive investment analysis of Beacon (BCN) - Cross-Chain DeFi Infrastructure solving the custody-convenience paradox">
+    <meta name="author" content="Persistence Capital Management Pty Ltd">
+    <meta property="og:title" content="Beacon (BCN) Investment Report">
+    <meta property="og:description" content="Cross-Chain DeFi Infrastructure: Solving the Custody-Convenience Paradox">
+    <meta property="og:type" content="website">
+    <title>Beacon (BCN) Investment Report - Persistence Capital</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 32px 20px;
+        position: relative;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #ffffff;
+        background-color: #ffffff;
+        text-align: justify;
+      }
+
+      .logo-container {
+        text-align: center;
+        margin-bottom: 30px;
+        background-color: #ffffff;
+        padding: 20px 0;
+      }
+
+      .logo {
+        max-height: 120px;
+        width: auto;
+      }
+
+      .header-section {
+        background-color: #182320;
+        padding: 30px;
+        text-align: center;
+        margin-bottom: 30px;
+        border-radius: 5px;
+      }
+
+      h1 {
+        color: #f6ee9c;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        font-family: system-ui, -apple-system, sans-serif;
+      }
+
+      .subtitle {
+        font-size: 18px;
+        color: #cbcaca;
+        margin-bottom: 20px;
+        font-style: italic;
+      }
+
+      .header-info {
+        font-size: 14px;
+        color: #ffffff;
+      }
+
+      .content-section {
+        background-color: #182320;
+        padding: 25px;
+        margin: 20px 0;
+        border-radius: 5px;
+      }
+
+      h2 {
+        color: #f6ee9c;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-family: system-ui, -apple-system, sans-serif;
+      }
+
+      h3 {
+        color: #cbcaca;
+        font-size: 16px;
+        font-weight: 700;
+        margin-top: 25px;
+        margin-bottom: 15px;
+        font-family: system-ui, -apple-system, sans-serif;
+      }
+
+      .highlight-box {
+        background-color: #243429;
+        border-left: 4px solid #f6ee9c;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 3px;
+      }
+
+      .token-info {
+        background-color: #243429;
+        padding: 20px;
+        border: 2px solid #f6ee9c;
+        margin: 20px 0;
+        border-radius: 5px;
+        font-family: system-ui, -apple-system, sans-serif;
+      }
+
+      .investment-terms {
+        background-color: #243429;
+        border: 2px solid #cbcaca;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+        font-size: 14px;
+        background-color: #182320;
+      }
+
+      th {
+        background-color: #182320;
+        color: #f6ee9c;
+        padding: 15px 12px;
+        text-align: left;
+        vertical-align: top;
+        font-weight: 700;
+        font-family: system-ui, -apple-system, sans-serif;
+        border: 1px solid #243429;
+      }
+
+      td {
+        background-color: #243429;
+        color: #ffffff;
+        padding: 12px;
+        text-align: left;
+        vertical-align: top;
+        border: 1px solid #2d4035;
+      }
+
+      tr:nth-child(even) td {
+        background-color: #1e2923;
+      }
+
+      ul,
+      ol {
+        margin: 15px 0;
+        padding-left: 25px;
+        color: #ffffff;
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+
+      p {
+        color: #ffffff;
+        margin: 15px 0;
+      }
+
+      .disclaimer {
+        background-color: #182320;
+        padding: 25px;
+        margin-top: 30px;
+        font-size: 12px;
+        line-height: 1.4;
+        border-radius: 5px;
+      }
+
+      .disclaimer h3 {
+        color: #f6ee9c;
+        margin-top: 0;
+        margin-bottom: 15px;
+      }
+
+      .disclaimer p {
+        color: #ffffff;
+        margin-bottom: 12px;
+      }
+
+      .footer-section {
+        background-color: #182320;
+        padding: 20px;
+        text-align: center;
+        color: #ffffff;
+        font-size: 12px;
+        margin-top: 20px;
+        border-radius: 5px;
+      }
+
+      strong {
+        font-weight: 700;
+      }
+
+      /* Responsive Design */
+      @media screen and (max-width: 768px) {
+        body {
+          padding: 20px 15px;
+        }
+
+        h1 {
+          font-size: 24px;
+        }
+
+        h2 {
+          font-size: 18px;
+        }
+
+        h3 {
+          font-size: 14px;
+        }
+
+        .subtitle {
+          font-size: 16px;
+        }
+
+        table {
+          font-size: 12px;
+        }
+
+        th, td {
+          padding: 8px 4px;
+        }
+
+        .content-section {
+          padding: 20px 15px;
+        }
+
+        .logo {
+          max-height: 80px !important;
+        }
+      }
+
+      @media screen and (min-width: 769px) and (max-width: 1024px) {
+        body {
+          padding: 30px 40px;
+        }
+      }
+
+      /* Print Styles */
+      @media print {
+        body {
+          background-color: white;
+          padding: 0;
+        }
+
+        .content-section {
+          page-break-inside: avoid;
+        }
+
+        .disclaimer {
+          page-break-before: always;
+        }
+      }
+
+      /* Smooth Scrolling */
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* Selection Color */
+      ::selection {
+        background-color: #f6ee9c;
+        color: #182320;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo-container">
+      <div class="text-logo">
+        <div style="font-size: 32px; font-weight: 700; letter-spacing: 2px; color: #182320; font-family: system-ui, -apple-system, sans-serif;">PERSISTENCE</div>
+        <div style="font-size: 16px; font-weight: 400; letter-spacing: 8px; color: #182320; font-family: system-ui, -apple-system, sans-serif; margin-top: 5px;">CAPITAL</div>
+      </div>
+    </div>
+
+    <div class="header-section">
+      <h1>BEACON (BCN) INVESTMENT REPORT</h1>
+      <div class="subtitle">Cross-Chain DeFi Infrastructure: Solving the Custody-Convenience Paradox</div>
+      <div class="header-info">
+        <strong>Prepared by:</strong> Kyall Walker, General Partner, Persistence Capital Management Pty Ltd<br>
+        <strong>Date:</strong> October 2025
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h2>1. EXECUTIVE SUMMARY</h2>
+
+      <p>
+        Beacon represents the end-game for unified, decentralised finance. It provides a true solution
+        for the trade-off between the experience of centralised exchanges, the value of decentralised finance, and the
+        security of institutional custodial providers. By leveraging breakthrough cross-chain smart contract technology,
+        Beacon enables users to interact with any asset on any blockchain through a single unified interface, without
+        sacrificing control of their funds to centralised custodians or vulnerable bridge protocols.
+      </p>
+
+      <div class="token-info">
+        <strong>Token:</strong> BCN | <strong>Total Supply:</strong> 1 Billion | <strong>Launch:</strong> Q4 2025 |
+        <strong>Initial Price:</strong> $0.01
+      </div>
+
+      <h3>Key Investment Highlights:</h3>
+      <ul>
+        <li>
+          <strong>Market Opportunity:</strong> $42+ billion total addressable market currently captured by centralised
+          exchanges and bridges
+        </li>
+        <li>
+          <strong>Technical Breakthrough:</strong> First non-custodial platform with zero custody points across entire
+          technology stack
+        </li>
+        <li>
+          <strong>Proven Team:</strong> Experienced founders with track record of scaling web3 products. Previously built Zcash lite client with over 500k users.</li>
+        <li><strong>Liquid Investment:</strong> Token Generation Event (TGE) ~October 2025 with immediate market access.</li>
+        <li>
+          <strong>Deflationary Tokenomics:</strong> Token economics directly tied to platform usage with continuous burn
+          mechanisms
+        </li>
+      </ul>
+
+      <div class="investment-terms">
+        <h3>TGE Terms:</h3>
+        <p style="font-size: 18px; margin-top: 10px;">10% supply at $10M FDV ($0.01 per BCN) - No lockup</p>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h2>2. INVESTMENT THESIS</h2>
+
+      <p>
+        The decentralised finance sector faces a fundamental paradox: users must choose between security and
+        convenience. Current solutions force an impossible decision between centralised exchanges (convenient but risky
+        custody) and self-custodial wallets (secure but complex cross-chain operations). This false choice has created a
+        $42 billion opportunity for a platform that can deliver both security and convenience simultaneously.
+      </p>
+
+      <p>
+        Beacon solves this paradox through revolutionary zero-custody cross-chain architecture. Unlike competitors who
+        introduce custody points during cross-chain operations, Beacon maintains complete user control throughout the
+        entire transaction lifecycle. Users interact with a single smart contract capable of executing actions across
+        all supported blockchains, regardless of virtual machine or programming language differences.
+      </p>
+
+      <p>
+        Market timing is optimal following high-profile failures that have cost users billions. The FTX collapse ($9
+        billion in customer funds) and systematic bridge attacks ($5+ billion stolen 2021-2025, primarily by North
+        Korean hackers) have created urgent demand for trustless solutions. Beacon's zero-custody architecture
+        eliminates both custodial and bridge risks while delivering superior user experience.
+      </p>
+
+      <p>
+        Token value accrual is directly tied to platform adoption through deflationary mechanisms. Every transaction
+        burns BCN tokens, 75% of DeFi gas fees are burned, and 30% of pool yields fund additional buybacks and burns. As
+        usage scales, these mechanisms create sustained deflationary pressure while locked staking requirements further
+        reduce circulating supply.
+      </p>
+    </div>
+
+    <div class="content-section">
+      <h2>3. PROTOCOL FUNDAMENTALS &amp; TOKENOMICS</h2>
+
+      <h3>3.1 Token Overview</h3>
+      <ul>
+        <li><strong>Token Symbol:</strong> BCN</li>
+        <li><strong>Total Supply:</strong> 1 billion tokens</li>
+        <li><strong>Launch Date:</strong> October 2025</li>
+        <li><strong>Launch Networks:</strong> Ethereum and Base</li>
+        <li><strong>Initial Price:</strong> $0.01 per BCN</li>
+      </ul>
+
+      <h3>3.2 Token Utility</h3>
+      <p>
+        BCN is required to access every core Beacon feature, ensuring direct correlation between platform growth and
+        token demand:
+      </p>
+      <ul>
+        <li>
+          <strong>Transaction Fees:</strong> BCN required for all platform interactions and cross-chain operations
+        </li>
+        <li><strong>Liquidity Pool Creation:</strong> BCN staking required for pool deployment and management</li>
+        <li><strong>Node Operation:</strong> Network validators must stake BCN to participate in consensus</li>
+        <li>
+          <strong>Autonomous Agent Deployment:</strong> AI-powered yield optimization requires BCN for computation
+        </li>
+        <li><strong>Governance Participation:</strong> Protocol development controlled by BCN holders</li>
+      </ul>
+
+      <h3>3.3 Deflationary Mechanisms</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Mechanism</th>
+            <th>Impact</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Transaction Burning</td>
+            <td>High</td>
+            <td>Every Beacon transaction burns BCN, creating direct scarcity from usage</td>
+          </tr>
+          <tr>
+            <td>Gas Fee Burning</td>
+            <td>Very High</td>
+            <td>75% of all DeFi gas fees converted to BCN and burned permanently</td>
+          </tr>
+          <tr>
+            <td>Yield Buybacks</td>
+            <td>Medium</td>
+            <td>30% of pool yield used for BCN market buybacks and subsequent burning</td>
+          </tr>
+          <tr>
+            <td>Staking Requirements</td>
+            <td>Medium</td>
+            <td>Locked BCN for nodes and pools reduces circulating supply</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>3.4 Token Distribution</h3>
+      <ul>
+        <li><strong>Private Sale:</strong> 10% at $10M FDV (100M tokens)</li>
+        <li><strong>User Rewards Program:</strong> 10% for acquisition incentives (100M tokens)</li>
+        <li><strong>Team &amp; Development:</strong> 20% with vesting schedule (200M tokens)</li>
+        <li><strong>Liquidity &amp; Market Making:</strong> 15% for exchange listings (150M tokens)</li>
+        <li><strong>Treasury &amp; Operations:</strong> 25% for ongoing development (250M tokens)</li>
+        <li><strong>Public Sale &amp; Community:</strong> 20% for broader distribution (200M tokens)</li>
+      </ul>
+
+      <h3>3.5 Revenue Streams</h3>
+      <p>Beacon captures value across multiple revenue streams, all flowing to BCN token holders:</p>
+      <ul>
+        <li><strong>Platform Transaction Fees:</strong> Direct revenue from every cross-chain operation</li>
+        <li><strong>Staking Rewards and Pool Yields:</strong> Share of DeFi protocol earnings</li>
+        <li><strong>Infrastructure Fees:</strong> Node operation and network participation fees</li>
+        <li><strong>Governance Participation:</strong> Treasury management and protocol fee allocation</li>
+      </ul>
+    </div>
+
+    <div class="content-section">
+      <h2>4. TECHNICAL ARCHITECTURE &amp; INNOVATION</h2>
+
+      <h3>4.1 Core Technical Innovation</h3>
+      <p>Beacon's revolutionary architecture solves cross-chain complexity through several breakthrough innovations:</p>
+
+      <ul>
+        <li>
+          <strong>Single Smart Contract Architecture:</strong> Users interact with one unified contract capable of
+          executing actions across all blockchains, regardless of virtual machine differences
+        </li>
+        <li>
+          <strong>Zero Custody Points:</strong> Unlike competitors, Beacon maintains zero custody throughout the entire
+          transaction lifecycle
+        </li>
+        <li>
+          <strong>Native Cross-Chain Execution:</strong> Direct blockchain interaction without bridges, relays, or
+          intermediaries
+        </li>
+        <li>
+          <strong>AO Network Integration:</strong> Smart contracts with cron support enable autonomous execution and
+          self-management
+        </li>
+      </ul>
+
+      <h3>4.2 Security Stack</h3>
+      <p>Institutional-grade security accessible to retail users:</p>
+
+      <ul>
+        <li>
+          <strong>Trusted Execution Environment (TEE):</strong> Secure computation environment for sensitive operations
+        </li>
+        <li><strong>Multi-Signature Authorization:</strong> Threshold signing with configurable requirements</li>
+        <li><strong>Hardware Wallet Integration:</strong> Native support for Ledger, Trezor, and other devices</li>
+        <li><strong>Passkey/Biometric Authentication:</strong> Modern authentication methods for enhanced security</li>
+        <li><strong>Real-Time Anomaly Detection:</strong> AI-powered monitoring prevents malicious transactions</li>
+        <li>
+          <strong>Social Recovery Mechanisms:</strong> Decentralised account recovery without seed phrase dependence
+        </li>
+      </ul>
+
+      <h3>4.3 Autonomous Agents</h3>
+      <p>AI-powered agents provide sophisticated portfolio management while maintaining user control:</p>
+
+      <ul>
+        <li><strong>24/7 Yield Optimization:</strong> Continuous monitoring and reallocation across DeFi protocols</li>
+        <li><strong>Portfolio Rebalancing:</strong> Automated asset allocation based on user-defined parameters</li>
+        <li><strong>Multi-Sig Configurable Control:</strong> Users maintain oversight with SAFE-style requirements</li>
+        <li><strong>On-Chain LLM Integration:</strong> Intelligent decision-making powered by blockchain-native AI</li>
+      </ul>
+
+      <h3>4.4 Universal Compatibility</h3>
+      <p>Beacon's architecture enables unprecedented blockchain interoperability:</p>
+
+      <ul>
+        <li>
+          <strong>All Blockchain Networks:</strong> Native support regardless of consensus mechanism or architecture
+        </li>
+        <li>
+          <strong>No Bridge Dependency:</strong> Direct execution eliminates bridge vulnerabilities and custody risks
+        </li>
+        <li>
+          <strong>Non-Smart Contract Chains:</strong> Support for Bitcoin, Monero, and other networks without smart
+          contract capability
+        </li>
+        <li>
+          <strong>Full DeFi Integration:</strong> Native access to Uniswap, Aave, Compound, and all major protocols
+        </li>
+      </ul>
+    </div>
+
+    <div class="content-section">
+      <h2>5. MARKET OPPORTUNITY &amp; COMPETITIVE ANALYSIS</h2>
+
+      <h3>5.1 Total Addressable Market: $42+ Billion</h3>
+      <p>Beacon targets the convergence of four major crypto infrastructure markets:</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Market Segment</th>
+            <th>Current Size</th>
+            <th>Beacon's Advantage</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CEX Revenue</td>
+            <td>$42B annually</td>
+            <td>Same UX with zero custody risk</td>
+          </tr>
+          <tr>
+            <td>Institutional Custody</td>
+            <td>$3.1B by 2028</td>
+            <td>Enterprise features with true self-custody</td>
+          </tr>
+          <tr>
+            <td>Bridge Transaction Volume</td>
+            <td>Billions in annual fees</td>
+            <td>Native cross-chain execution, zero hack risk</td>
+          </tr>
+          <tr>
+            <td>Wallet Market</td>
+            <td>95%+ users avoid due to complexity</td>
+            <td>CEX simplicity with wallet security</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>5.2 Competitive Landscape</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Beacon</th>
+            <th>Infinex</th>
+            <th>Legend</th>
+            <th>DeFi.app</th>
+            <th>Phantom</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Custody Model</td>
+            <td>Zero custody points</td>
+            <td>Back-office custodial risk</td>
+            <td>Centralised bridges</td>
+            <td>Centralised components</td>
+            <td>Self-custody, bridge risk</td>
+          </tr>
+          <tr>
+            <td>Chain Support</td>
+            <td>All chains natively</td>
+            <td>Separate accounts per chain</td>
+            <td>EVM only</td>
+            <td>Primarily Ethereum</td>
+            <td>Multi-chain limited</td>
+          </tr>
+          <tr>
+            <td>Account Experience</td>
+            <td>Single unified account</td>
+            <td>Isolated accounts</td>
+            <td>Limited integration</td>
+            <td>Multiple accounts</td>
+            <td>Chain-specific wallets</td>
+          </tr>
+          <tr>
+            <td>Security Stack</td>
+            <td>TEE + Multi-sig + Biometrics</td>
+            <td>Traditional custody</td>
+            <td>Standard wallet security</td>
+            <td>Basic security</td>
+            <td>Standard wallet security</td>
+          </tr>
+          <tr>
+            <td>Autonomous Agents</td>
+            <td>AI-powered 24/7 optimization</td>
+            <td>No autonomous features</td>
+            <td>Limited automation</td>
+            <td>Manual operations</td>
+            <td>No autonomous features</td>
+          </tr>
+          <tr>
+            <td>Funding Raised</td>
+            <td>$500K at $5M-$10M FDV</td>
+            <td>$67M at $500M valuation</td>
+            <td>$15M at $150M+ valuation</td>
+            <td>$2M at $100M valuation</td>
+            <td>$109M (Series B)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>5.3 Competitive Advantages</h3>
+      <ul>
+        <li>
+          <strong>Technical Moat:</strong> Zero-custody cross-chain architecture is extremely difficult to replicate and
+          represents years of development
+        </li>
+        <li>
+          <strong>Network Effects:</strong> Token incentives create viral user acquisition while deflationary mechanics
+          reward early adopters
+        </li>
+        <li>
+          <strong>Superior UX:</strong> As DeFi market matures, user experience becomes increasingly valuable
+          differentiator
+        </li>
+        <li>
+          <strong>Security Reputation:</strong> Elimination of custody and bridge risks provides strongest security
+          profile in market
+        </li>
+      </ul>
+
+      <h3>5.4 The DeFi Problem Statement</h3>
+      <p>Current DeFi infrastructure suffers from four fundamental problems that Beacon uniquely solves:</p>
+
+      <ul>
+        <li>
+          <strong>Fragmented Cross-Chain Experience:</strong> Users must manage multiple wallets, gas balances, and
+          complex network switching, creating significant barriers to adoption
+        </li>
+        <li>
+          <strong>Bridge Vulnerabilities:</strong> Over $5 billion stolen from cross-chain bridges (2021-2025), with
+          North Korean hackers systematically targeting these single points of failure
+        </li>
+        <li>
+          <strong>CEX Custody Risks:</strong> FTX collapse demonstrated that even "reputable" centralised platforms can
+          result in $9 billion customer fund losses
+        </li>
+        <li>
+          <strong>Complex User Experience:</strong> 95% of potential users avoid DeFi due to technical complexity,
+          limiting market growth and adoption
+        </li>
+      </ul>
+    </div>
+
+    <div class="content-section">
+      <h2>6. TRACTION &amp; ADOPTION METRICS</h2>
+
+      <h3>6.1 Current Metrics</h3>
+      <div class="highlight-box">
+        <ul>
+          <li><strong>Product Status:</strong> iOS version operational for 6+ months with proven functionality</li>
+          <li><strong>Active Users:</strong> 1,200 active wallets demonstrating product-market fit</li>
+          <li><strong>Waitlist Demand:</strong> 7,000 Android signups indicating strong market demand</li>
+          <li><strong>Development Pace:</strong> Consistent quarterly feature releases showing reliable execution</li>
+        </ul>
+      </div>
+
+      <h3>6.3 Product Roadmap</h3>
+      <p><strong>Q3 2025:</strong></p>
+      <ul>
+        <li>Android app launch addressing 7,000-person waitlist</li>
+        <li>Web interface deployment for broader accessibility</li>
+        <li>Node network activation enabling decentralised infrastructure</li>
+      </ul>
+
+      <p><strong>Q4 2025:</strong></p>
+      <ul>
+        <li>Token Generation Event and major exchange listings</li>
+        <li>Multi-chain expansion (Bitcoin, Solana, additional L2s)</li>
+        <li>Autonomous agent deployment with yield optimisation</li>
+      </ul>
+
+      <p><strong>Q1 2026:</strong></p>
+      <ul>
+        <li>Major DeFi protocol integration (Uniswap, Aave, Compound direct access)</li>
+        <li>Advanced yield optimization features and portfolio management</li>
+        <li>Enterprise features and institutional onboarding</li>
+      </ul>
+    </div>
+
+    <div class="content-section">
+      <h2>7. GO-TO-MARKET STRATEGY</h2>
+
+      <h3>7.1 Product-Led Growth Approach</h3>
+      <p>Beacon employs a viral, incentive-driven strategy designed to overcome wallet user stickiness:</p>
+
+      <ul>
+        <li>
+          <strong>Token Incentives:</strong> Early users rewarded with BCN tokens for platform usage and asset migration
+        </li>
+        <li>
+          <strong>Referral System:</strong> 2x multiplier rewards for bringing friends, with proven 1.8% conversion
+          rates
+        </li>
+        <li>
+          <strong>Activity-Based Rewards:</strong> Liquidity provision and cross-chain transactions generate additional
+          BCN earnings
+        </li>
+        <li>
+          <strong>Community Building:</strong> $200K marketing budget focused on crypto-native communities and
+          influencer partnerships
+        </li>
+      </ul>
+
+      <h3>7.2 Incentive Program Structure</h3>
+      <p>10% of total token supply (100M BCN) allocated for user acquisition over 6-month campaign:</p>
+
+      <ul>
+        <li><strong>Monthly Allocations:</strong> Declining distribution starting with 33.33M tokens in month 1</li>
+        <li>
+          <strong>APR Structure:</strong> Starting at 1067% APR, declining to 107% by month 6 to sustain long-term
+          incentives
+        </li>
+        <li>
+          <strong>Referral Multipliers:</strong> 2x rewards for users with 5+ successful referrals, driving viral growth
+        </li>
+        <li>
+          <strong>Whale Incentives:</strong> Users with $100K+ TVL capture 50% of pool rewards with additional
+          multipliers
+        </li>
+      </ul>
+
+      <h3>7.3 Marketing Strategy</h3>
+      <ul>
+        <li><strong>Primary Audience:</strong> DeFi users via Twitter/X and Reddit engagement</li>
+        <li><strong>Expansion to Retail:</strong> Fiat ramps and simplified onboarding for mainstream users</li>
+        <li>
+          <strong>Influencer Partnerships:</strong> Targeting 5+ million impressions through crypto-native content
+          creators
+        </li>
+        <li><strong>Community Platforms:</strong> Quest platforms, leaderboards, and gamified user acquisition</li>
+      </ul>
+
+      <h3>7.4 User Acquisition Economics</h3>
+      <p>High Customer Acquisition Cost (CAC) justified by superior Lifetime Value (LTV):</p>
+
+      <ul>
+        <li><strong>Sticky Product Hypothesis:</strong> Superior UX and comprehensive features reduce churn rates</li>
+        <li><strong>Multi-Asset TVL Migration:</strong> Users gradually move more assets to Beacon over time</li>
+        <li><strong>Network Effects:</strong> Each new user increases platform value for existing users</li>
+        <li>
+          <strong>Token Appreciation:</strong> Early users benefit from deflationary tokenomics as platform scales
+        </li>
+      </ul>
+    </div>
+
+    <div class="content-section">
+      <h2>8. VALUATION ANALYSIS</h2>
+
+      <p>Beacon's valuation is attractive relative to competitors and market potential:</p>
+
+      <ul>
+        <li>
+          <strong>Comparable Analysis:</strong> Trading at significant discount versus Infinex ($500M), Legend ($150M+),
+          and other competitors
+        </li>
+        <li>
+          <strong>Market Capture Potential:</strong> 10% market share of $42B TAM equals $4.2B annual revenue
+          opportunity
+        </li>
+        <li>
+          <strong>Deflationary Mechanics:</strong> Sustained buy pressure from transaction burning and yield buybacks
+        </li>
+        <li>
+          <strong>Early-Stage Discount:</strong> Appropriate risk adjustment for execution and adoption challenges
+        </li>
+      </ul>
+
+      <h3>8.4 Investment Highlights</h3>
+      <div class="highlight-box">
+        <ul>
+          <li>
+            <strong>Early Liquidity Access:</strong> Unlike traditional VC deals, investors gain market access within
+            4-12 weeks
+          </li>
+          <li>
+            <strong>Proven Product:</strong> 6+ months live operation with 1,200+ active users reduces technical risk
+          </li>
+          <li>
+            <strong>Market Timing:</strong> Post-FTX/bridge-hack environment creates urgent demand for trustless
+            solutions
+          </li>
+          <li>
+            <strong>Technical Moats:</strong> Zero-custody architecture extremely difficult for competitors to replicate
+          </li>
+          <li><strong>Token Value Accrual:</strong> Direct correlation between platform usage and token scarcity</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h2>9. RISK FACTORS</h2>
+
+      <h3>9.1 Technical Risks</h3>
+      <ul>
+        <li>
+          <strong>AO Network Infrastructure Dependency:</strong> Reliance on early-stage network. The AO smart contract enables cross-chain swaps via prompts sent to all VMs/private keys. Network risk impacts protocol risk.
+        </li>
+      </ul>
+
+      <h3>9.2 Market Risks</h3>
+      <ul>
+        <li>
+          <strong>Crypto Market Volatility:</strong> Bear market conditions could impact user adoption and token value
+        </li>
+        <li>
+          <strong>Well-Funded Competition:</strong> Infinex ($67M raised) and other competitors have significant
+          resources, established distribution channels and network effects.
+        </li>
+      </ul>
+
+      <h3>9.3 Execution Risks</h3>
+      <ul>
+        <li>
+          <strong>Team Delivery:</strong> Ambitious roadmap requires complex, first-to-world features execution across multiple technical domains
+        </li>
+        <li><strong>Partnership Delays:</strong> DeFi protocol integrations may take longer than planned</li>
+      </ul>
+
+      <h3>9.4 Token-Specific Risks</h3>
+      <ul>
+        <li><strong>Price Volatility:</strong> High volatility expected in early trading periods post-TGE</li>
+        <li><strong>Liquidity Depth:</strong> Insufficient trading volume may impact price stability</li>
+        <li>
+          <strong>Deflationary Mechanism Effectiveness:</strong> Burn mechanisms may not create sufficient scarcity
+        </li>
+        <li>
+          <strong>Governance Concentration:</strong> Token concentration among early investors may impact
+          decentralisation
+        </li>
+      </ul>
+
+      <h3>9.5 Risk Mitigation Factors</h3>
+      <div class="highlight-box">
+        <ul>
+          <li>
+            <strong>Live Product Operation:</strong> 6+ months of iOS functionality significantly reduces technical risk
+          </li>
+          <li><strong>Aerodrome Launch Platform:</strong> Syndicate (SYND) token launch and other ICOs (via MetaDAO, Legion) have been heavily over-subscribed in recent months.</li>
+          <li>
+            <strong>Conservative Valuation:</strong> Low FDV creates asymmetric opportunity for early investors.
+          </li>
+          <li>
+            <strong>Staged Rollout:</strong> Measurable milestones and quarterly releases enable course correction
+          </li>
+          <li>
+            <strong>Token Incentive Bootstrap:</strong> User rewards program reduces dependency on organic adoption
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <h2>10. CONCLUSION &amp; OUTLOOK</h2>
+
+      <p>
+        Beacon represents the convergence of breakthrough technology, massive market opportunity, and exceptional
+        timing. The team has identified and solved DeFi's core problem—the false choice between security and
+        convenience—with technology that makes centralised exchanges and vulnerable bridges obsolete.
+      </p>
+
+      <p>
+        The zero-custody cross-chain architecture is a genuine technical breakthrough that eliminates the largest risk
+        vectors in cryptocurrency while delivering superior user experience. This combination of institutional-grade
+        security with consumer-friendly interface addresses the primary barriers that have prevented mainstream DeFi
+        adoption.
